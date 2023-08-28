@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de botões com mesma classe</title>
+</head>
+<body>
+  <button class="meuBotao">Botão 1</button>
+  <button class="meuBotao">Botão 2</button>
+
+  <script>
+
+    var botoes = document.querySelectorAll(".meuBotao");
+
+    botoes.forEach(function(botao) {
+      botao.addEventListener("click", function() {
+        alert("Um botão foi clicado!");
+      });
+    });
+  </script>
+</body>
+</html>
